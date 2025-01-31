@@ -7,7 +7,7 @@ import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
 
 import { Inter } from "next/font/google";
-import { Source_Code_Pro } from "next/font/google";
+import { Source_Code_Pro, Space_Grotesk } from "next/font/google";
 
 import { person, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
@@ -54,7 +54,14 @@ type FontConfig = {
 	from https://once-ui.com/customize
 */
 const secondary: FontConfig | undefined = undefined;
-const tertiary: FontConfig | undefined = undefined;
+// const tertiary: FontConfig | undefined = undefined;
+
+const tertiary = Space_Grotesk({
+    variable: '--font-tertiary',
+    subsets: ['latin'],
+    display: 'swap'
+});
+
 /*
  */
 
